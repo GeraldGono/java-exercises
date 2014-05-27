@@ -1,0 +1,6 @@
+class Factor {
+	boolean isFactor(int a, int b) { //two parameters
+	 if((b%a) == 0) return true;
+	 else return false;
+	}
+}
