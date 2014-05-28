@@ -1,0 +1,41 @@
+class SDemo {
+	public static void main(String args[]) {
+		Stack stk1 = new Stack(10);
+
+		char name[] = {'T', 'o', 'm'};
+
+		Stack stk2 = new Stack(name);
+
+		char ch;
+		int i;
+		
+		for(y = 0; y < 10; y++)
+			stk1.push((char) ('A' + y));
+
+		Stack stk3 = new Stack(stk1);
+
+		System.out.print("Contents of stk1: ");
+		for(y = 0; y < 10; y++ ){
+		  ch = stk1.pop();
+		  System.out.print(ch);
+ 		}
+
+		System.out.println("\n");
+
+		System.out.print("Contents of stk2: ");
+		for( y = 0; y < 3; y++){
+		   ch = stk2.pop();
+		   System.out.print(ch);
+		}
+		System.out.println("\n");
+		System.out.print("Contents of stk3: ");
+
+		for( y = 0; y < 10; y++){
+		  ch = stk3.pop();
+		  System.out.print(ch);	
+		}
+
+	}
+
+	
+}
